@@ -17,10 +17,9 @@
 + #### 플레이어 캐릭터 무기 장착 함수 구현
 + #### 스폰된 Weapon을 각 무기DataAsset에 저장된 HoldSokcet에 부착함
 + #### 플레이어가 키를 누르면 아래의 진행 방식을 통해 무기 장착 함수가 호출 됨
-  + #### 1. 현재 플레이어가 무기를 장착했는지 CurrentWeapon변수를 통해 확인함.
-  + #### 2. 무기를 선택함.
-    + #### ㄴ 2-1 현재 무기를 장착 한 상태가 아니면, 누른 키에 맞는 WeaponType을 저장된 WeaponDataAsset 맵에서 찾아, 해당 무기를 CurrentWeapon에, DataAsset은 CurrentDataAsset에 저장함.
-    + #### ㄴ 2-2 반대로 현재 무기를 장착한 상태면, 해당 무기를 HoldSocket에 부착하는 함수를 호출 함, 그 후 AnimNotify를 통해 CurrentWeapon와 CurrentDataAsset를 초기화 함.
-  + #### 3. 선택한 무기의  CurrentDataAsset에서 EquipMontage를 통해 애니메이션 몽타주를 실행함.
-    + #### ㄴ AnimNotify를 통해 HandSocket에 무기를 부착함
-
+  + #### 현재 플레이어가 무기를 장착했는지 CurrentWeapon변수를 통해 확인함.
+  + #### 현재 무기를 장착 한 상태가 아니면, 누른 키에 맞는 WeaponType을 저장된 WeaponDataAsset 맵에서 찾아, 해당 무기를 CurrentWeapon에, DataAsset은 CurrentDataAsset에 저장하고, 장착 애니메이션을 출력함.
+  + #### 반대로 현재 무기를 장착한 상태면, 이미 장착된 무기와 장착할 무기의 WeaponType을 비교함.
+    + #### ㄴ 서로 다른 WeaponType이면 현재 무기를 HoldSocket에 부착 하고 무기 장착 함수를 호출 함.
+    + #### ㄴ 서로 같은 WeaponType이면 CurrentDataAsset에서 UnEquipMontage 애니메이션을 출력하고, AnimNotify를 통해 특정 지점에서 무기를 HoldSocket에 부착 하고 함수를 종료함.
+    
