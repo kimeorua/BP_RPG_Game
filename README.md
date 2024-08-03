@@ -21,5 +21,6 @@
   + #### 2. 무기를 선택함.
     + #### ㄴ 2-1 현재 무기를 장착 한 상태가 아니면, 누른 키에 맞는 WeaponType을 저장된 WeaponDataAsset 맵에서 찾아, 해당 무기를 CurrentWeapon에, DataAsset은 CurrentDataAsset에 저장함.
     + #### ㄴ 2-2 반대로 현재 무기를 장착한 상태면, 해당 무기를 HoldSocket에 부착하는 함수를 호출 함, 그 후 AnimNotify를 통해 CurrentWeapon와 CurrentDataAsset를 초기화 함.
-  + ### 2. 
+  + #### 3. 선택한 무기의  CurrentDataAsset에서 EquipMontage를 통해 애니메이션 몽타주를 실행함.
+    + #### ㄴ AnimNotify를 통해 HandSocket에 무기를 부착함
 
