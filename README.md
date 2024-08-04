@@ -22,4 +22,8 @@
   + #### 반대로 현재 무기를 장착한 상태면, 이미 장착된 무기와 장착할 무기의 WeaponType을 비교함.
     + #### ㄴ 서로 다른 WeaponType이면 현재 무기를 HoldSocket에 부착 하고 위의 무기 장착 로직을 실행 함.
     + #### ㄴ 서로 같은 WeaponType이면 CurrentDataAsset에서 UnEquipMontage 애니메이션을 출력하고, AnimNotify를 통해 특정 지점에서 무기를 HoldSocket에 부착 하고 함수를 종료함.
+
+### 08-04
+  + #### 검 장착시 이동 애니메이션 변경
+  + #### 블랜드 스페이스를 추가 작성하고, WeaponType을 애님블루프린트에서 확인하여 Type에 맞게 애니메이션을 재생 함
     
