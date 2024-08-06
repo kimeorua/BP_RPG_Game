@@ -31,3 +31,6 @@
   + #### 콤보공격 구현을 위해 애님몽타지와 PlayRate를 가지고 있는 ComboMontage구조체를 작성하고, DataAsset에 배열로 추가함.
   + #### 좌클릭 입력을 인식 받으면, CanAttack 을 False로 변경하고, 애니메이션을 출력함.
   + #### CanAttack이 False로 상태에서 추가로 입력을 받으면, AnimNotifyState에서 현재 콤보 입력 가능 구간인지 확인후, 콤보 입력 가능 구간이면 CanCombo를 True로 변경하여 다음 애니메이션을 출력함.
+
+### 08-06
+  + #### 점프공격 추가
