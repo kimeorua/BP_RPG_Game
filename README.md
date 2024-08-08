@@ -40,3 +40,8 @@
   + #### 현재 상태를 확인하기 위해 StateComponent 추가함.
   + #### 공격 시 일정 시간 동안 Collision프로파일을 변경하여 Overlap이벤트가 작동 되도록 구현함.
   + #### 델리게이트를 통해 WeaponComponent에서 호출하고, Collision은 AnimNotify를 이용하여 특정 구간에서만 Collision이 작동하도록 구현 함.
+
+### 08-08
+  + #### 공격 적중 시 피격 모션 출력
+  + #### Damage를 준 객체와 맞은 객체의 Location을 통해 방향을 구하고, 해당 방향에 맞는 피격 몽타주를 재생 하도록 구현함.
+  + #### State를 확인하여 Die 상태이면 사망 모션이 나오도록 구현함.
