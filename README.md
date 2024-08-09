@@ -45,3 +45,11 @@
   + #### 공격 적중 시 피격 모션 출력
   + #### Damage를 준 객체와 맞은 객체의 Location을 통해 방향을 구하고, 해당 방향에 맞는 피격 몽타주를 재생 하도록 구현함.
   + #### State를 확인하여 Die 상태이면 사망 모션이 나오도록 구현함.
+
+### 08-09
+  + #### 데미지 처리 구현
+  + #### 스탯의 최대와 현재 값을 가지고 있는 F_Stat구조체를 가지고, 해당 구조체를 각 스탯의 수량에 맞게 가지는 F_Status 구조체를 작성함.
+  + #### DA_Status DataAsset를 작성하여 F_Status 구조체를 추가하고, 해당 DataAsset을 상속 받는 DA_Player를 작성함.
+  + #### 해당 StatusComponent를 작성하여, StatusDataAsset을 추가하고, 초기화 및 수치 변화를 작성함.
+  + #### 데미지를 받을 시 해당 StatusComponent의 ChangeStatus함수를 호출하여 현재 체력을 변경함.
+  + #### 데미지를 중복해서 받는 현상을 DoOnce를 활용하여 해결 함.
