@@ -123,3 +123,10 @@
 ### 08-23
   + #### LockOn시 HUD가운데에 아이콘이 표시되도록 구현함.
   + #### 위젯 애니메이션을 생성하여, 깜빡거리는 애니메이션을 추가함.
+
+### 08-24
+  + #### 카운터 패링 성공 후 공격 시 처형 애니메이션이 나오도록 구현 함.
+  + #### 카운터 패링 성공 시, 플레이어의 bExecution변수를 true로 바꾸고, LineTrace를 통해 충돌한 Pawn이 있는지 확인함.
+  + #### Pawn이 있으면 해당 Pawn을 BP_BaseCharacter로 변환 하고, WeaponComponent에서 Execution함수를 변환한 Pawn을 Target변수로 전달하여 실행 함.
+  + #### WeaponComponent의 Execution는 Target은 처형모션에 맞을때의 애니메이션을, 플레이어는 처형 모션을 재생하도록 구현함.
+  + #### 추가적으로 위치 및 회전값을 조정하여, 좀더 자연스럽게 변경 함.
