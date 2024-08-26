@@ -130,3 +130,7 @@
   + #### Pawn이 있으면 해당 Pawn을 BP_BaseCharacter로 변환 하고, WeaponComponent에서 Execution함수를 변환한 Pawn을 Target변수로 전달하여 실행 함.
   + #### WeaponComponent의 Execution는 Target은 처형모션에 맞을때의 애니메이션을, 플레이어는 처형 모션을 재생하도록 구현함.
   + #### 추가적으로 위치 및 회전값을 조정하여, 좀더 자연스럽게 변경 함.
+
+### 08-26
+  + #### 처형 모션에 맞춰서 데미지를 넣도록 구현함.
+  + #### WeaponComponent에서 함수를 작성해서 노티파이에서 호출해서 구현함.
